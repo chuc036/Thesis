@@ -1,0 +1,93 @@
+<!doctype html>
+    <html lang=en>
+<head>
+    <link rel="stylesheet" href="commandments.css">
+    <title>Commandments</title>
+
+</head>
+<body>
+
+<div class="mainText_container" id="main">
+
+    <div class="mainText" id="placeholder">
+       Click for a Commandment.
+    </div>
+</div>
+
+<div id="reload" class="button">
+    more
+</div>
+
+<div id="info" class="button">
+    i
+</div>
+
+<div class="paragraph" id="slideout">
+    When Coronavirus halted my studies for three weeks in my junior year of college, I returned to one of my first loves, Movies. I had three weeks where my life had, for lack of a better term, ceased to exist, and time could be spent doing anything within my home. I flicked through my infinite subscriptions, seeing them become more like the cable packages my family used to debate with Comcast. After a few Netflix originals that seemed to be nothing more than alternative Hallmark films, and excruciatingly bland Hulu movies, I began to see cracks forming in my once beloved pastime.<br><br>
+    In becoming the standard vehicle of entertainment, streaming sites had devolved into capitalistic entertainment machines, ruthlessly adapting and drawing out any kind of profitable entertainment. The plot of each film, the timeline of each show, began to blend together, becoming such a mishmash of insignificant plot and scene, it felt like it was almost inhuman.<br> <br>
+    Suddenly, any film regardless of genre became nothing but formula. Storytelling had become nothing more but an input, and cash, subscriptions and notoriety had become the outputs. I had to step back and decontextualize my relationship to these streaming platforms, and the methodologies of popular film and television. This experiment takes the situational context of plot elements, and removes the context, leaving only a suspiciously specific and abstract statement in its place. <br><br>
+    Special thanks Elliot Bohlen and Luke Bulman. Parsons CD Thesis 2020.
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+    console.log("hello world!")
+
+
+    //INFORMATION
+    $("#info").click(function(){
+        console.log("info toggle")
+        $("#slideout").toggle();
+        $(this).toggleClass('black');
+        $("#reload").toggle();
+        $("#placeholder").toggle();
+    })
+
+    //CHANGE SENTANCE
+    
+    $("#reload").click(function(){
+
+    //PREFAB VAR-ing
+    var sentences = 
+    ["The Copiously Credited Director infiltrated the ranks of the Hate Dumb, only to find Homoerotic Subtext exploding from the Swirly Energy Thingy.",
+    "Featureless Plane of Disembodied Dialogue... Title In","The Ensemble Dark Horse failed to consider The German’s love for David Hasselhoff.",
+    "A Covert Group with a Mundane Front decides to stare into the abyss and make it blink first.",
+    "The Ghost Butler is Not Wearing the Boot That Kills You.","The Applied Phlebtonium can delineate between the Doombots from Planet Retcon and the Morality Kitchen Sink.",
+    "The Meta-Concept of Jenny’s Number is nothing more than a Fascists’ Bedtime.", "Wangst over Poor Communications Skills, or Tragic Irony.",
+    "I Break the Fourth Wall as a Cosmic Retcon.", "Contrived Coincidence describes an improbable event in a story which is required by the plot, but which has no outward justification.",
+    "By Crossing the Line Twice, The Heroic Comedic Sociopath invited in the Villain on the principle of Sacred Hospitality.","The Dissalusioned Mother figure Comes to Town for a Familial Beatdown at a Holiday Dinner.",
+    "The Erudite Stoner redefines the Resource Value.", "A Bloody Wedding Dress can Not Be What It Looks Like when presented without context.","A Rip from the Headlines must always Introduce Themselves.",
+    "To Diffuse the Bomb, There Should be a Convenience in the Coincidental Pot.", "My Name is Absurdly Spacious", "Averting the Dead Horse is nearly impossible when the Dead Horses are the Oldest in the Book."];
+
+     var result = sentences[Math.floor(Math.random() * sentences.length)];
+
+        console.log(result);
+        console.log("new Statement!")
+        $("#placeholder").text(result);
+
+
+     var r = Math.floor(Math.random() * 255);
+     var g = Math.floor(Math.random() * 255);
+     var b = Math.floor(Math.random() * 255);
+
+    var h = Math.floor(Math.random() * 255);
+     var s = Math.floor(Math.random() * 100);
+     var l = Math.floor(Math.random() * 100);
+
+     var c = "rgb(" + r + "," + g + "," + b + ")";
+     var d = "hsl(" + h + "," + 100 + "%," + 50 + "%)";
+
+     $('body').css('background-color', c);
+    $('#placeholder').css('color', d)
+    })
+
+
+
+
+});
+</script>
+
+</body>
+ </html>
