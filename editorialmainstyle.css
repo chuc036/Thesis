@@ -1,0 +1,94 @@
+body{
+    background-color: orange;
+}
+
+.head{
+    font-family: dico-mono,mono;
+font-weight: 400;
+font-style: normal;
+position: relative;
+padding-left: 5%;
+margin-top: 30px;
+color: black;
+}
+
+.title{
+    font-size: 3vw;
+    font-weight: 600;
+    padding-bottom: 1%;
+}
+
+.subtitle{
+    font-size: 1.6vw;
+    padding-left: 20px;
+}
+
+.button{
+    font-family: dico-mono,mono;
+    font-size: 1.5vw;
+    font-style: italic;
+    position: relative;
+    padding-left: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 11%;;
+    color: black
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white
+}
+
+
+#hidden{
+    display: inline;
+}
+
+#hidden:hover{
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+#print{
+    color: whitesmoke;
+}
+
+#listContainer{
+    width: 30%;
+   
+    margin-left: 25%;
+    margin-top: -15%;
+    overflow-y: hidden;
+}
+
+.pictureButton{
+    font-family: dico-mono,mono;
+    font-size: 1.5vw;
+    text-align: center;
+    position: relative;
+    width: 70%;
+
+    margin: 0 auto;
+    margin-bottom: 30px;;
+}
+
+#deadhorse{
+    padding-top: 10px;
+    width: 60%
+}
+
+.pictureButton:hover{
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+
+#killerjoe{
+    padding-top: 10px;
+    width: 60%;
+}
