@@ -71,7 +71,6 @@ a:hover{
     text-align: center;
     position: relative;
     width: 70%;
-
     margin: 0 auto;
     margin-bottom: 30px;;
 }
@@ -82,3 +81,12 @@ a:hover{
     color: whitesmoke;
 }
 
+#commandments{
+    padding-top: 10px;
+    width: 60%;
+}
+
+#baldwin{
+    padding-top: 10px;
+    width: 60%;
+}
