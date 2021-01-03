@@ -39,17 +39,17 @@
 
 <div id="listContainer">
 
-    <div class="pictureButton">
+    <div class="pictureButton" id ="a">
         commandment posters<br>
         <img id="deadhorse" src="content/deadhorse.jpeg">
     </div>
 
-    <div class="pictureButton">
+    <div class="pictureButton"id ="b">
             theater posters<br>
         <img id="killerjoe" src="content/killerjoefinalscan1.jpg">
     </div>
     
-    <div class="pictureButton">
+    <div class="pictureButton"id ="c">
             type gifs<br>
         <img id="horrorL" src="content/horror.gif">
     </div>
@@ -83,15 +83,44 @@
         typographic gifs
         <img id="horror_big" src="content/horror.gif">
         <img id="horror_big" src="content/fried.gif">
-
-
     </div>
 
 
 
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
 
+    console.log("hello world")
+
+    $("#a").click(function(){
+        $("#commandment_all").toggle();
+    });
+
+    $("#b").click(function(){
+        $("#killerjoe_all").toggle();
+    });
+
+    $("#c").click(function(){
+        $("#gifs_all").toggle();
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
+</script>
 
 
 </body>
