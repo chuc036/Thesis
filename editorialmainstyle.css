@@ -1,15 +1,15 @@
 body{
-    background-color: orange;
+    background-color: #ffa500;
 }
 
 .head{
     font-family: dico-mono,mono;
-font-weight: 400;
-font-style: normal;
-position: relative;
-padding-left: 5%;
-margin-top: 30px;
-color: black;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    padding-left: 5%;
+    margin-top: 30px;
+    color: black;
 }
 
 .title{
@@ -38,6 +38,7 @@ color: black;
 a{
     color: black;
     text-decoration: none;
+
 }
 
 a:hover{
@@ -50,7 +51,7 @@ a:hover{
 }
 
 #hidden:hover{
-    color: whitesmoke;
+    color: #f5f5f5;
     cursor: pointer;
 }
 
@@ -60,11 +61,13 @@ a:hover{
 
 #listContainer{
     width: 30%;
-   
     margin-left: 25%;
     margin-top: -15%;
-    overflow-y: hidden;
+    height: 400px;
+    overflow-y: auto;
+    -webkit-touch-callout: none;
 }
+
 
 .pictureButton{
     font-family: dico-mono,mono;
@@ -72,9 +75,18 @@ a:hover{
     text-align: center;
     position: relative;
     width: 70%;
-
+    
     margin: 0 auto;
     margin-bottom: 30px;;
+}
+
+#largeContainer{
+    width: 50%;
+    height: 80%;
+    background-color: chartreuse;
+margin-left: 50%;;
+    overflow-y: auto;
+    text-align: center;
 }
 
 #deadhorse{
@@ -82,13 +94,68 @@ a:hover{
     width: 60%
 }
 
+#horrorL{
+    padding-top: 10px;
+    width: 60%
+    
+}
+
 .pictureButton:hover{
     cursor: pointer;
     color: whitesmoke;
+}
+
+/*ON AND OFF*/
+
+#killerjoe_all{
+    display: none;
+}
+
+#commandment_all{
+    display: none;
+}
+
+#gifs_all{
+    display: block;
+    margin: 0 auto;
 }
 
 
 #killerjoe{
     padding-top: 10px;
     width: 60%;
+}
+
+#killerjoe_big{
+    width: 110%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#killerjoe_big2{
+    width: 110%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#deadhorse_big{
+    width: 110%;
+    margin-top: 10px;
+    text-align: center;
+}
+#horror_big{
+    width: 120%;
+    padding-top: 10px;
+    
+}
+
+
+.details{
+    font-family: dico-mono,mono;
+    font-size: 1.5vw;
+    position: relative;
+    text-align: center;
+    width: 70%;
+
+    margin-bottom: 30px;
 }
